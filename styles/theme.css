@@ -12,12 +12,30 @@
     font-family: montserrat-bold;
     src: url('/fonts/Montserrat-Bold.ttf');
 }
+@font-face{
+    font-family: montserrat-italic;
+    src: url('/fonts/Montserrat-Italic.ttf');
+}
+
+@media only screen and (min-width: 500px) {
+    .work {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .work {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 body{
     width: 100%;
     font-family: montserrat-regular;
+    margin-bottom: 200px;
 }
 header{
     line-height: 50px;
+    margin-bottom: 30px;
 }
 h1{
     font-family: montserrat-bold;
@@ -83,7 +101,20 @@ nav ul li a.on-page:hover{
   color: #85a3e0;
   font-weight: 600;
 }
-
+.bio_section a{
+    color: #85a3e0;
+}
+.bio_section p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.work{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
 .work p{
     font-size: 14px;
     margin-bottom: 30px;
@@ -109,7 +140,7 @@ nav ul li a.on-page:hover{
     vertical-align: top;
 }
 .section{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .name_header{
     margin-right:auto;
@@ -124,4 +155,175 @@ nav ul li a.on-page:hover{
     font-size: 20px;
     font-family: montserrat-semibold;
     color: #525252; 
+}
+
+
+/* case studies on work page */
+
+.work_cont {
+    position: relative;
+    width: auto;
+}
+  
+.work_pic {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.work_title {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.work_cont:hover .work_pic {
+    opacity: 0.3;
+}
+
+.work_cont:hover .work_title {
+    opacity: 1;
+}
+
+.text {
+    font-family: montserrat-semibold;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+    line-height: 25px;
+}
+
+/* case study page */
+#case-title{
+    margin: 10px 0;
+}
+.group{
+    margin: 10px 0;
+    font-family: montserrat-regular;
+    line-height: 25px;
+    margin: 25px 0;
+}
+.subtitle{
+    font-family: montserrat-regular;
+    color: #808080;
+    margin-top: 0px;
+}
+.case_pic{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+.type{
+    color: red;
+}
+.input{
+    color: black;
+}
+.side-section{
+    width: 18%;
+    padding: 0px 30px 0 0;
+    float: left;
+}
+.main-section{
+    width: 60%;
+    padding: 0 20px 0 0;
+    float: left;
+    /* border-style: solid; */
+}
+.section-label{
+    font-family: montserrat-semibold;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #BDBDBD;
+}
+.section-content{
+    line-height: 25px;
+    color: #2C2C2C;
+}
+.details-container{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+}
+.details-item{
+    font-size: 16px;
+    text-align: left;
+}
+.details-label{
+    font-family: montserrat-semibold;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #BDBDBD;
+    margin: 15px 0px 0px 0px;
+}
+.details-content{
+    margin-top: 8px;
+}
+hr{
+    border: 1px solid #DBDBDB;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+h3{
+    font-family: montserrat-semibold;
+    font-size: 24px;
+    margin-top: 12px;
+}
+.paragraph{
+    line-height: 25px;
+    margin: 25px 0;
+}
+ol{
+    line-height: 25px;
+    display: block;
+}
+li .img-left{
+    width: 100%;
+    margin-top: 20px;
+}
+li .img-right{
+    float: right;
+    width: 100%;
+    margin-top: 20px;
+}
+.emphasis-text{
+    font-family:montserrat-italic;
+    font-size: 24px;
+    line-height: 34px;
+}
+.main-section img{
+    width: 100%;
+}
+.emph-word{
+    font-family: montserrat-semibold;
+    display: inline;
+}
+img.large-pic{
+    width: 150%;
+    margin-left: -30%;
+}
+.prototype .gif{
+    width: 32%;
+    padding-right: 10px;
+}
+.prototype .gif:nth-child(2) {
+    padding-right: 15px;
+  }
+.prototype{
+    display:inline-flex;
+}
+.subtitle{
+    margin-top: 0px;
+    font-size: 14px;
+
 }
