@@ -16,6 +16,14 @@
     font-family: montserrat-italic;
     src: url('/fonts/Montserrat-Italic.ttf');
 }
+@font-face{
+    font-family: montserrat-medium;
+    src: url('/fonts/Montserrat-Medium.ttf');
+}
+@font-face{
+    font-family: montserrat-medium-italic;
+    src: url('/fonts/Montserrat-MediumItalic.ttf');
+}
 
 @media only screen and (min-width: 500px) {
     .work {
@@ -107,6 +115,11 @@ nav ul li a.on-page:hover{
 .bio_section p{
     font-size: 14px;
     margin-bottom: 30px;
+}
+.paragraph a{
+    color: #85a3e0;
+    font-family: montserrat-medium;
+    text-decoration: underline;
 }
 .work{
     margin: 0 auto;
@@ -217,6 +230,12 @@ nav ul li a.on-page:hover{
     color: #808080;
     margin-top: 0px;
 }
+.pic-text{
+    font-family: montserrat-regular;
+    color: #808080;
+    margin-top: 0px;
+    text-align: center;
+}
 .case_pic{
     object-fit: cover;
     width: 100%;
@@ -284,8 +303,9 @@ h3{
     margin: 25px 0;
 }
 ol{
-    line-height: 25px;
+    line-height: 30px;
     display: block;
+    margin: 25px 0;
 }
 li .img-left{
     width: 100%;
@@ -309,8 +329,10 @@ li .img-right{
     display: inline;
 }
 img.large-pic{
-    width: 150%;
+    width: 1000px;
     margin-left: -30%;
+    background-position: center;
+  
 }
 .prototype .gif{
     width: 32%;
@@ -322,8 +344,17 @@ img.large-pic{
 .prototype{
     display:inline-flex;
 }
-.subtitle{
-    margin-top: 0px;
-    font-size: 14px;
-
+.quote{
+    font-family: montserrat-medium-italic;
+    color: #8FACE2;
+    font-size: 18px;
+    padding: 8px 0px;
+    text-align: left;
+}
+.quote-right{
+    font-family: montserrat-medium-italic;
+    color: #8FACE2;
+    font-size: 18px;
+    padding: 8px 0px;
+    text-align: right;
 }
