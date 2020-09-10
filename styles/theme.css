@@ -121,6 +121,9 @@ nav ul li a.on-page:hover{
     font-family: montserrat-medium;
     text-decoration: underline;
 }
+.group a{
+    color: #85a3e0;
+}
 .work{
     margin: 0 auto;
     display: grid;
