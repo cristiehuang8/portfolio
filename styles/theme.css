@@ -45,6 +45,9 @@ header{
     line-height: 50px;
     margin-bottom: 30px;
 }
+header p{
+    line-height: 30px;
+}
 h1{
     font-family: montserrat-bold;
     letter-spacing: 1px;
@@ -238,9 +241,21 @@ nav ul li a.on-page:hover{
 }
 .pic-text{
     font-family: montserrat-regular;
+    font-size: 12px;
     color: #808080;
     margin-top: 0px;
     text-align: center;
+}
+.sub-section .smaller-gif{
+    width: 80%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sub-section .pic-text{
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 .case_pic{
     object-fit: cover;
@@ -339,8 +354,8 @@ li .img-right{
 }
 img.large-pic{
     width: 1000px;
-    margin-left: -30%;
     background-position: center;
+    padding-top: 20px;
   
 }
 .prototype .gif{
