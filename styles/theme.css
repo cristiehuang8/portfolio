@@ -39,8 +39,16 @@
 body{
     width: 100%;
     font-family: montserrat-regular;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
+footer {
+    text-align: center;
+    padding-top: 150px;
+    color: gray;
+    width: 75%;
+    margin-left:auto;
+    margin-right: auto;
+  }
 header{
     line-height: 50px;
     margin-bottom: 30px;
@@ -353,10 +361,13 @@ li .img-right{
     display: inline;
 }
 img.large-pic{
-    width: 1000px;
+    width: 100%;
+    height: auto;
     background-position: center;
     padding-top: 20px;
-  
+}
+.italic{
+    font-family: montserrat-italic;
 }
 .prototype .gif{
     width: 32%;
