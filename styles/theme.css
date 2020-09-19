@@ -99,7 +99,9 @@ nav{
 nav a img{
     vertical-align: middle;
 }
-
+.emph-phrase{
+    color: #7C9DE0;
+}
 nav ul{
     display: flex;
 }
