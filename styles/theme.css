@@ -24,6 +24,10 @@
     font-family: montserrat-medium-italic;
     src: url('/fonts/Montserrat-MediumItalic.ttf');
 }
+@font-face{
+    font-family: montserrat-light;
+    src: url('/fonts/Montserrat-Light.ttf');
+}
 
 @media only screen and (min-width: 500px) {
     .work {
@@ -217,7 +221,7 @@ nav ul li a.on-page:hover{
 }
 
 .work_cont:hover .work_pic {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .work_cont:hover .work_title {
@@ -229,6 +233,10 @@ nav ul li a.on-page:hover{
     color: black;
     font-size: 16px;
     padding: 16px 32px;
+    line-height: 25px;
+}
+.work-desc{
+    font-family: montserrat-light;
     line-height: 25px;
 }
 
@@ -362,6 +370,16 @@ li .img-right{
 .emph-word{
     font-family: montserrat-semibold;
     display: inline;
+}
+.grabbd-emph-word{
+    font-family: montserrat-semibold;
+    display: inline;
+    color: #ea9999;
+}
+.grabbd-emph-text{
+    font-family: montserrat-semibold;
+    display: inline;
+    color: #61D0C1;
 }
 img.large-pic{
     width: 100%;
