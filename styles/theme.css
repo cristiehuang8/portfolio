@@ -145,7 +145,7 @@ nav ul li a.on-page:hover{
 .work{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
 }
