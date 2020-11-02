@@ -238,7 +238,9 @@ nav ul li a.on-page:hover{
 .work-desc{
     font-family: montserrat-light;
     line-height: 25px;
+    color: black;
 }
+
 
 /* case study page */
 #case-title{
