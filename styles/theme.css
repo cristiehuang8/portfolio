@@ -57,9 +57,17 @@ footer {
 header{
     line-height: 50px;
     margin-bottom: 30px;
+    display: inline-flex;
 }
 header p{
     line-height: 30px;
+}
+.portrait{
+    height: 300px;
+    display: inline-flex;
+}
+.header-text{
+    padding-left: 40px;
 }
 h1{
     font-family: montserrat-bold;
