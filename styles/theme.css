@@ -63,7 +63,7 @@ header p{
     line-height: 30px;
 }
 .portrait{
-    height: 300px;
+    height: 340px;
     display: inline-flex;
 }
 .header-text{
@@ -77,6 +77,8 @@ h1{
 h2{
     font-family: montserrat-semibold;
     font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 p{
     font-size: 16px;
