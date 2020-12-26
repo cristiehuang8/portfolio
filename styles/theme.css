@@ -29,34 +29,6 @@
     src: url('/fonts/Karla-MediumItalic.ttf');
 }
 @font-face{
-    font-family: montserrat-regular;
-    src: url('/fonts/Montserrat-Regular.ttf');
-}
-@font-face{
-    font-family: montserrat-semibold;
-    src: url('/fonts/Montserrat-SemiBold.ttf');
-}
-@font-face{
-    font-family: montserrat-bold;
-    src: url('/fonts/Montserrat-Bold.ttf');
-}
-@font-face{
-    font-family: montserrat-italic;
-    src: url('/fonts/Montserrat-Italic.ttf');
-}
-@font-face{
-    font-family: montserrat-medium;
-    src: url('/fonts/Montserrat-Medium.ttf');
-}
-@font-face{
-    font-family: montserrat-medium-italic;
-    src: url('/fonts/Montserrat-MediumItalic.ttf');
-}
-@font-face{
-    font-family: montserrat-light;
-    src: url('/fonts/Montserrat-Light.ttf');
-}
-@font-face{
     font-family: spectral-extrabold;
     src: url('/fonts/Spectral-ExtraBold.ttf');
 }
@@ -210,7 +182,7 @@ nav ul li a.on-page:hover{
     margin-bottom: 30px;
 }
 .work #connect{
-    font-family: montserrat-semibold;
+    font-family: karla-semibold;
 }
 .work a {
     color: #85a3e0;
