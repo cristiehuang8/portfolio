@@ -1,6 +1,34 @@
 @charset "utf-8";
 
 @font-face{
+    font-family: karla-regular;
+    src: url('/fonts/Karla-Regular.ttf');
+}
+@font-face{
+    font-family: karla-light;
+    src: url('/fonts/Karla-Light.ttf');
+}
+@font-face{
+    font-family: karla-semibold;
+    src: url('/fonts/Karla-SemiBold.ttf');
+}
+@font-face{
+    font-family: karla-bold;
+    src: url('/fonts/Karla-Bold.ttf');
+}
+@font-face{
+    font-family: karla-medium;
+    src: url('/fonts/Karla-Medium.ttf');
+}
+@font-face{
+    font-family: karla-italic;
+    src: url('/fonts/Karla-Italic.ttf');
+}
+@font-face{
+    font-family: karla-medium-italic;
+    src: url('/fonts/Karla-MediumItalic.ttf');
+}
+@font-face{
     font-family: montserrat-regular;
     src: url('/fonts/Montserrat-Regular.ttf');
 }
@@ -28,6 +56,14 @@
     font-family: montserrat-light;
     src: url('/fonts/Montserrat-Light.ttf');
 }
+@font-face{
+    font-family: spectral-extrabold;
+    src: url('/fonts/Spectral-ExtraBold.ttf');
+}
+@font-face{
+    font-family: merriweather-black;
+    src: url('/fonts/Merriweather-Black.ttf');
+}
 
 @media only screen and (min-width: 500px) {
     .work {
@@ -42,7 +78,7 @@
 }
 body{
     width: 100%;
-    font-family: montserrat-regular;
+    font-family: karla-light;
     margin-bottom: 50px;
 }
 footer {
@@ -63,25 +99,34 @@ header p{
     line-height: 30px;
 }
 .portrait{
-    height: 340px;
+    height: 440px;
     display: inline-flex;
 }
 .header-text{
     padding-left: 40px;
 }
 h1{
-    font-family: montserrat-bold;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    font-family: spectral-extrabold;
+    font-size: 55px;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    color: #232323;
 }
 h2{
-    font-family: montserrat-semibold;
-    font-size: 22px;
+    font-family: spectral-extrabold;
+    letter-spacing:-1px;
+    font-size: 30px;
     margin-top: 0px;
     margin-bottom: 30px;
 }
+p#pre-h1{
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: karla-semibold;
+    color: #B7B7B7;
+}
 p{
-    font-size: 16px;
+    font-size: 18px;
 }
 ul{
     list-style: none;
@@ -121,9 +166,10 @@ nav ul{
     display: flex;
 }
 nav ul li a{
-    margin: 30px;
+    margin: 15px;
     color: #888888;
     font-size: 15px;
+    text-transform: uppercase;
 }
 nav ul li a:hover{
     color: #85a3e0;
@@ -146,7 +192,7 @@ nav ul li a.on-page:hover{
 }
 .paragraph a{
     color: #85a3e0;
-    font-family: montserrat-medium;
+    font-family: karla-medium;
     text-decoration: underline;
 }
 .details-content a{
@@ -197,8 +243,9 @@ nav ul li a.on-page:hover{
 }
 #name{
     font-size: 20px;
-    font-family: montserrat-semibold;
+    font-family: karla-medium;
     color: #525252; 
+    text-transform: uppercase;
 }
 
 
@@ -239,14 +286,15 @@ nav ul li a.on-page:hover{
 }
 
 .text {
-    font-family: montserrat-semibold;
+    font-family: karla-semibold;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     padding: 16px 32px;
     line-height: 25px;
 }
 .work-desc{
-    font-family: montserrat-light;
+    font-family: karla-light;
+    font-size: 18px;
     line-height: 25px;
     color: black;
 }
@@ -254,27 +302,36 @@ nav ul li a.on-page:hover{
 
 /* case study page */
 #case-title{
-    margin: 10px 0;
+    font-size: 40px;
+    margin: 20px 0;
 }
 .sub-section{
     margin-top: 80px;
 }
 .group{
     margin: 10px 0;
-    font-family: montserrat-regular;
+    font-family: karla-regular;
     line-height: 25px;
     margin: 25px 0;
 }
 .subtitle{
-    font-family: montserrat-regular;
+    font-family: karla-regular;
     color: #808080;
     margin-top: 0px;
 }
 .pic-text{
-    font-family: montserrat-regular;
-    font-size: 12px;
+    font-family: karla-regular;
+    font-size: 14px;
     color: #808080;
     margin-top: 0px;
+    text-align: center;
+}
+.pic-text-cumulus{
+    font-family: karla-regular;
+    font-size: 14px;
+    color: #808080;
+    margin-top: 10px;
+    margin-bottom: 100px;
     text-align: center;
 }
 .sub-section .smaller-gif{
@@ -313,14 +370,16 @@ nav ul li a.on-page:hover{
     /* border-style: solid; */
 }
 .section-label{
-    font-family: montserrat-semibold;
-    font-size: 16px;
+    font-family: karla-bold;
+    font-size: 18px;
     letter-spacing: 4px;
-    color: #BDBDBD;
+    color: #85a3e0;
 }
 .section-content{
     line-height: 25px;
     color: #2C2C2C;
+    font-size: 18px;
+    font-family: karla-light;
 }
 .details-container{
     display: grid;
@@ -329,11 +388,11 @@ nav ul li a.on-page:hover{
     grid-template-columns: 1fr 1fr;
 }
 .details-item{
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
 }
 .details-label{
-    font-family: montserrat-semibold;
+    font-family: karla-semibold;
     font-size: 16px;
     letter-spacing: 4px;
     color: #BDBDBD;
@@ -341,6 +400,8 @@ nav ul li a.on-page:hover{
 }
 .details-content{
     margin-top: 8px;
+    font-size: 18px;
+    font-family: karla-light;
 }
 hr{
     border: 1px solid #DBDBDB;
@@ -349,18 +410,29 @@ hr{
     margin-bottom: 50px;
 }
 h3{
-    font-family: montserrat-semibold;
-    font-size: 24px;
-    margin-top: 12px;
+    font-family: karla-semibold;
+    font-size: 30px;
+    margin-top: 16px;
 }
 .paragraph{
     line-height: 25px;
-    margin: 25px 0;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: karla-light;
+}
+.paragraph img{
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 ol{
     line-height: 30px;
+    font-family: karla-light;
+    font-size: 18px;
     display: block;
-    margin: 25px 0;
+    margin-bottom: 25px;
+}
+.grabbd{
+    margin-bottom: 25px;
 }
 li .img-left{
     width: 100%;
@@ -372,26 +444,30 @@ li .img-right{
     margin-top: 20px;
 }
 .emphasis-text{
-    font-family:montserrat-italic;
-    font-size: 24px;
-    line-height: 34px;
+    font-family:karla-italic;
+    font-size: 28px;
+    margin: 40px 0px;
+    line-height: 38px;
 }
 .main-section img{
     width: 100%;
 }
 .emph-word{
-    font-family: montserrat-semibold;
+    font-family: karla-semibold;
     display: inline;
 }
 .grabbd-emph-word{
-    font-family: montserrat-semibold;
+    font-family: karla-semibold;
     display: inline;
     color: #ea9999;
 }
 .grabbd-emph-text{
-    font-family: montserrat-semibold;
+    font-family: karla-semibold;
     display: inline;
     color: #61D0C1;
+}
+.chat{
+    line-height: 25px;
 }
 img.large-pic{
     width: 100%;
@@ -400,29 +476,30 @@ img.large-pic{
     padding-top: 20px;
 }
 .italic{
-    font-family: montserrat-italic;
+    font-family: karla-italic;
 }
 .prototype .gif{
-    width: 32%;
-    padding-right: 10px;
+    width: 50%;
+    float: center;
 }
-.prototype .gif:nth-child(2) {
-    padding-right: 15px;
-  }
 .prototype{
-    display:inline-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
 }
 .quote{
-    font-family: montserrat-medium-italic;
+    font-family: karla-medium-italic;
     color: #8FACE2;
-    font-size: 18px;
+    font-size: 20px;
     padding: 8px 0px;
     text-align: left;
 }
 .quote-right{
-    font-family: montserrat-medium-italic;
+    font-family: karla-medium-italic;
     color: #8FACE2;
-    font-size: 18px;
+    font-size: 20px;
     padding: 8px 0px;
     text-align: right;
 }
