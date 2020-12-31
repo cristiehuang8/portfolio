@@ -76,6 +76,26 @@ header p{
 }
 .header-text{
     padding-left: 40px;
+    top: 50%;
+    font-size: 20px;
+}
+.header-text p{
+    font-size: 20px;
+}
+.container{
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 h1{
     font-family: spectral-extrabold;
@@ -159,8 +179,9 @@ nav ul li a.on-page:hover{
     color: #85a3e0;
 }
 .bio_section p{
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 30px;
+    line-height: 30px;
 }
 .paragraph a{
     color: #85a3e0;
@@ -387,7 +408,7 @@ h3{
     margin-top: 16px;
 }
 .paragraph{
-    line-height: 25px;
+    line-height: 30px;
     margin-top: 40px;
     font-size: 18px;
     font-family: karla-light;
