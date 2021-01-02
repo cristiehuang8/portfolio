@@ -153,6 +153,7 @@ nav a img{
 }
 .emph-phrase{
     color: #7C9DE0;
+    font-family: karla-regular;
 }
 nav ul{
     display: flex;
