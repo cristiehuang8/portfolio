@@ -195,14 +195,15 @@ nav ul li a.on-page:hover{
 .work{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-gap: 70px;
 }
 .work p{
     font-size: 14px;
     margin-bottom: 30px;
 }
+
 .work #connect{
     font-family: karla-semibold;
 }
@@ -249,16 +250,125 @@ nav ul li a.on-page:hover{
     position: relative;
     width: auto;
 }
-  
-.work_pic {
-    opacity: 1;
+.img-box{
+    display: inline-block; /* shrink wrap to image */
+    overflow: hidden; /* hide the excess */
+    border-radius: 8px;
+    width: 60%;
+    height: auto;
+}
+
+.work_pic{
     display: block;
+    transition: all .5s ease-in-out;
+    border-radius: 8px;
     width: 100%;
     height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    border-radius: 15px;
 }
+
+.work_pic:hover{
+    transform: scale(1.04);
+}
+
+.proj-brief{
+    padding-left: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.proj-title{
+    vertical-align: middle;
+    font-family: karla-bold;
+    color: #292929;
+    font-size: 28px;
+}
+
+.proj-sub{
+    font-family: karla-regular;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #A8A8A8;
+}
+
+.proj-desc{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: karla-light;
+    font-size: 18px;
+    line-height: 25px;
+    color: #292929;
+}
+a.view-button{
+    color: #292929;
+    font-size: 16px;
+}
+a.view-button:hover{
+    color: #292929;
+    font-size: 16px;
+}
+.view-button {
+    position: relative;
+    border: none;
+    background-color: white;
+    margin: auto;
+    padding: 19px 22px;
+    font-family: karla-light;
+    transition: all 0.5s ease;
+    outline: none;
+  }
+  .view-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(201, 214, 241, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .view-button span {
+    position: relative;
+    font-size: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  .view-button:hover:before {
+    width: 100%;
+    background: #C9D6F1;
+    outline: none;
+  }
+  
+  .view-button:active {
+    outline: none;
+    transform: scale(0.96);
+  }
+  .view-button span:after {
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+  .view-button:hover span {
+    padding-right: 18px;
+  }
+  
+  .view-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 
 .work_title {
     transition: .5s ease;
@@ -271,27 +381,6 @@ nav ul li a.on-page:hover{
     text-align: center;
 }
 
-.work_cont:hover .work_pic {
-    opacity: 0.2;
-}
-
-.work_cont:hover .work_title {
-    opacity: 1;
-}
-
-.text {
-    font-family: karla-semibold;
-    color: black;
-    font-size: 18px;
-    padding: 16px 32px;
-    line-height: 25px;
-}
-.work-desc{
-    font-family: karla-light;
-    font-size: 18px;
-    line-height: 25px;
-    color: black;
-}
 
 
 /* case study page */
